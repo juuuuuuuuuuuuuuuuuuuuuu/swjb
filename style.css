@@ -3,8 +3,32 @@
     padding: 0; /*안쪽여백 0*/
     box-sizing: border-box; /*테두리 두께 무시*/
     /*border: 1px solid black;*/
+    /* font-family: 'Merriweather' !important; */
 }
+.button{
+    position: sticky;
+    bottom: 0;
+    z-index: 99999999999;
+}
+.home{
+    width: 50px ;
+    height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
 
+    font-weight: 600;
+    background-color: #F4F3EA;
+    color: olivedrab;
+
+    box-shadow: 0px 4px 20px #a0a0a0;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 html{
     scroll-behavior: smooth;
 }
@@ -45,7 +69,7 @@ li{
     transition: 0.3s;
 }
 .logo:hover{
-    color: blanchedalmond;
+    color: rgb(177, 177, 113);
 }
 .menu{
     width: 400px;
@@ -63,7 +87,7 @@ li{
     transition: 0.3s;
 }
 .menu li a:hover{
-    color: blanchedalmond;
+    color: rgb(177, 177, 113);
 }
 .main{
     width: 1200px;
@@ -89,6 +113,7 @@ li{
     font-size: 30px;
     width: 300px;
     height: 100px;
+    margin-top: 30px;
 
     border: 1px solid white;
     border-radius: 30px;
@@ -113,7 +138,7 @@ li{
 
 .about h2{
     font-size: 30px;
-    color:#3b5998;
+    color:olivedrab;
 }
 
 .about h1{
@@ -142,9 +167,16 @@ li{
     height: 500px;
     padding-left: 10px;
 }
+.about .right ul{
+    width: 600px;
+}
+.about .right .icons{
+    display: flex;
+
+}
 
 .about .right h3{
-    color: #3b5998;
+    color: olivedrab;
     font-size: 30px;
 }
 
@@ -163,6 +195,13 @@ li{
 .fa-facebook{
     color: #3b5998;
 }
+.fa-instagram{
+    color: #eee;
+    padding-left: 2px;
+    padding-right: 2px;
+    background: linear-gradient(200deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    border-radius: 10px
+}
 
 .skills{
     width: 100%;
@@ -176,7 +215,7 @@ li{
     padding-top: 100px;
 }
 .skills h2{
-    color: #3b5998;
+    color: olivedrab;
     font-size: 30px;
 }
 .skills h1{
@@ -198,6 +237,9 @@ li{
     padding: 10px;
 
     transition: 0.3s;
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 3px #ccc;
 }
 .skills h3{
     margin-top: 20px;
@@ -205,18 +247,18 @@ li{
     font-size: 25px;
 }
 .skills p{
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
     font-size: 20px;
 }
 .skills i{
-    color: #3b5998;
+    color: olivedrab;
 }
 .fa-keyboard{
     font-size: 50px;
 }
 .skills .contents li:hover{
-    background-color: #3b5998;
+    background-color: olivedrab;
     color: white;
     transform: scale(1.05);
 }
@@ -233,6 +275,30 @@ li{
 .projects{
     height: 1200px;
 }
+.projects li{
+    box-shadow: 3px 3px 3px #ccc;
+}
+
+.contents li img{
+    width: 330px;
+    height: 170px;
+
+    align-items: center;
+}
+
+.contents li .title{
+    font-weight: 800;
+}
+.contents li p .fa-solid{
+    font-size: 200px;
+
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.contents li .fa-spinner{
+    font-size: 70px !important;
+    
+}
 .contact{
     width: 1200px;
     height: 800px;
@@ -241,7 +307,7 @@ li{
     }
 .contact h2{
     font-size: 30xp;
-    color: #3b5998;
+    color: olivedrab;
 }
 .contact h1{
     font-size: 50px;
@@ -260,7 +326,7 @@ li{
 .contact .right{
     width: 800px;
     height: 600px;
-    border-left: 2px dashed #ccc;
+    border-left: 2px solid #eee ;
     padding-left: 50px;
 }
 .info li{
@@ -273,26 +339,39 @@ li{
     font-size: 23px;
     font-weight: bold;
 }
+.info i{
+    padding-right: 10px;
+    font-style: normal;
+}
 .contact .right p{
     font-size: 25px;
 }
 .contact .right input{
-    width: 500px;
+    width: 750px;
     height: 30px;
     margin-bottom: 30px;
 
     border: 1px solid #ccc;
 }
 .contact .right textarea{
-    width: 500px;
+    width: 750px;
     height: 300px;
 
     border: 1px solid #ccc;
 }
 .contact .right button{
-    width: 500px;
+    width: 750px;
     height: 30px;
-    background-color: #3b5998;
+    background-color: olivedrab;
     color: white;
+    font-weight: bold;
+    border: 1px solid black;
+
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+.contact .right button:active {
+    transform: translateY(1px);
+    box-shadow: 0px 4px 20px #a0a0a0;
 }
 
